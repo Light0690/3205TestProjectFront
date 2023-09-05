@@ -1,11 +1,8 @@
 import instance from "./axiosConfig";
 
-interface Params {
-  email: string;
-  number: string;
-}
+import { User } from "../interfaces/User";
 
-export const getUser = async ({ email, number }: Params) => {
+export const getUser = async ({ email, number }: User) => {
   const response = await instance.post("login", {
     email,
     number,
