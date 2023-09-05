@@ -59,7 +59,7 @@ export const Form = ({ setFormBody }: Props) => {
         errors={formik.errors.number}
         touched={formik.touched.number}
       />
-      <UiFormButton title={"Войти"} disabled={!isEmptyObj(formik.errors)} />
+      <UiFormButton title={"Найти"} disabled={!isEmptyObj(formik.errors)} />
     </form>
   );
 };
