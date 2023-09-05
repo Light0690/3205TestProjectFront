@@ -20,6 +20,8 @@ const App = () => {
   useEffect(() => {
     (async () => {
       setLoading(true);
+      setUser([]);
+      setError(null);
 
       try {
         if (formBody) {
